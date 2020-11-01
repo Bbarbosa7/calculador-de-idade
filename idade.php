@@ -9,9 +9,9 @@
     
     <?php
 
-        $nome = isset($_GET["nome"]) ? $_GET["nome"] : "[Nome não informado]"; 
+        $nome = isset($_GET["nome"]) ? $_GET["nome"] : "Nome não informado"; 
         $ano = isset ($_GET["ano"]) ? $_GET["ano"] : 0;
-        $sexo = isset ($_GET["sexo"]) ? $_GET["sexo"]: "[Sexo não informado]";
+        $sexo = isset ($_GET["sexo"]) ? $_GET["sexo"]: "Sexo não informado";
         $idade = date("Y") - $ano;
 
         echo "$nome é do sexo $sexo e tem $idade anos!";
